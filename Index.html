@@ -4,189 +4,225 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>"html Proyecto"</title>
-    <link rel="stylesheet" href="/CSS/Todo.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+    crossorigin="anonymous"
+    />
     <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="/CSS/Todo.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap"
+      rel="stylesheet"
+    />
+    <title>index nuevo</title>
   </head>
-<body class="main">
-  <header>
-    <div class="grid__head">
-      <a href="/Index.html" class="prueba__a"
-        ><img class="header__logo animate__animated animate__backInDown" src="/Imagenes/BJLogo (1).png" alt="Logo del proyecto"
-      /></a>
-      <div class="header__mail">
-        <img class="header__mail__img"
-          src="/Imagenes/pngtree-email-icon-design-png-image_2413695.jpg"
-          alt="Icono de mail"
+  <body>
+    <header>
+      <div>
+        <img
+          src="/Imagenes/BJLogo (1).png"
+          alt="Imagen Logo"
+          class="animate__animated animate__backInDown header__logo margin__logo"
         />
-        <div class="mail">Mail de contacto:<!-- El mail de contacto deberia encontrarse en la esquina superior derecha --></div>
       </div>
-        <div class="p__head"><p>blackjaga.esports@gmail.com</p></div>
+<!--    Hacer que se vean como los botones del nav original -->
+      <div>
+        <nav class="navbar navbar-expand-md navbar-light bg-light pt-0 pb-0" id="menu">
+          <div style="background-color: rgb(71, 71, 71);" class="container-fluid p-2">
+            <a class="navbar-brand" href="/Index.html">Home</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="/Secciones/Tienda.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/Secciones/Tienda.html">Tienda</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Equipos
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="/Secciones/Equipos.html">Equipos</a></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li><a class="dropdown-item" href="/Secciones/TFT.html">TFT</a></li>
+                    <li><a class="dropdown-item" href="/Secciones/LOL.html">LOL</a></li>
+                    <li><a class="dropdown-item" href="/Secciones/CSGO.html">CS</a></li>
+                    <li><a class="dropdown-item" href="/Secciones/Valorant.html">Valorant</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button style="background-color: #8458b3; color: white;" class="btn " type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
       </div>
-      <!-- Esto deberia encontrase abajo -->
-    </ul>
-    <br />
-    <hr />
-    <div class="header__nav__div">
-    <nav>
-      <ul class="horizontal subequipo">
-        <div>
-        <li><a href="/Index.html" class="nav">Home</a></li>
-        <li><a href="/Secciones/Equipos.html" class="nav">Equipos</a>
-          <ul>
-            <li class="sub"><a href="/Secciones/CSGO.html">CS GO</a></li>
-            <li class="sub"><a href="/Secciones/Valorant.html">Valorant</a></li>
-            <li class="sub"><a href="/Secciones/LOL.html">League of Legends</a></li>
-            <li class="sub"><a href="/Secciones/TFT.html">TFT</a></li>
-          </ul>
-        </li>
-        <li><a href="/Secciones/Nosotros.html" class="nav">Nosotros</a></li>
-        <li><a href="/Secciones/Tienda.html" class="nav">Tienda</a></li>
+    </header>
+    <section>
+<!--       <div class="div__banner">
+        <img src="/Imagenes/1500x500.png" class="img-fluid" alt="banner" width="100%">
+      </div> -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div class="header__redes">
-        <a href="https://www.instagram.com/blackjaga_/" target="_blank" class="header__redes__nav"
-          ><img src="/Imagenes/insta.jpg" alt="Logo instagram" width="25" height="25"
-        /></a>
-        <a href="https://twitter.com/BlackJaga_" class="header__redes__nav" target="_blank"
-          ><img src="/Imagenes/twitter.jpg" alt="Logo twitter" width="25" height="25"
-        /></a>
-        <a href="https://www.twitch.tv/blackjaga_" class="header__redes__nav" target="_blank"
-          ><img src="/Imagenes/twitch.png" alt="Logo twitch" width="25" height="25"
-        ></a>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/Imagenes/1500x500.png" class="d-block w-100" alt="banner">
+          </div>
+          <div class="carousel-item">
+            <img src="https://picsum.photos/id/180/1500/500" class="d-block w-100" alt="foto random">
+          </div>
+          <div class="carousel-item">
+            <img src="https://picsum.photos/id/100/1500/500" class="d-block w-100" alt="foto random">
+          </div>
+        </div>
       </div>
-    </div>
-      </ul>
-    </nav>  
-  </header>
-  <section class="banner">
-    <hr />
-    <div></div>
-    <img src="/Imagenes/1500x500.png" alt="Ultima noticia" width="100%" />
-    <hr />
-    <br />
-  </section>
-  <section class="img__grid">
-    <div class="div__img">
-      <a href="/Secciones/Noticias.html" class="noticias">
-        <img class="img"
-          src="/Imagenes/Ew9Hb8hWEAAvevo.jfif"
-          alt="Noticia de la semana pasada"
-        />
-      </a>
-      <a href="/Secciones/Noticias.html" class="noticias"
-        ><img class="img"
-          src="/Imagenes/match.png"
-          alt="Noticia de hace semanas"
-        />
-      </a>
-      <a href="/Secciones/Noticias.html" class="noticias">
-        <img class="img"
-          src="/Imagenes/campeon.png"
-          alt="Noticia de hace semanas"
-        />
-      </a>
-      <a href="/Secciones/Noticias.html" class="noticias">
-        <img class="img"
-          src="/Imagenes/EvpNlyoXMAYn2Un.png"
-          alt="Noticia vieja"
-        />
-      </a>
-    </div>
-    <aside><!--Colocar calendario--></aside>
-    <!--El Calendendario deberia verse al costado de la sugunda fila de Imagenes-->
-  </section>
-  <footer>
-    <hr />
-    <br />
-    <div class="grid__foot">
-    <span class="footer__nos">
-      <a href="/Index.html"
-      ><img src="/Imagenes/BJLogo (1).png" alt="Logo del proyecto" class="footer__logo"
-      /></a>
-      <br>
-      <div class="nosfot">
-        <h2 class="letra">Nosotros:</h2>
-        <h3 class="letra">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste in rem delectus provident vitae quaerat quisquam fuga temporibus fugiat accusamus laudantium esse, a id nisi molestiae nesciunt cupiditate! Sequi, similique!</h3>
+      <div class="container-md">
+        <div class="row row-cols-1 row-cols-md-2 g-5 mt-3 pb-5">
+          <div class="col">
+            <div class="card">
+              <img src="/Imagenes/EvpNlyoXMAYn2Un.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="/Imagenes/Ew9Hb8hWEAAvevo.jfif" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="/Imagenes/match.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="/Imagenes/campeon.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </span>
-    <!--Contar la historia del proyecto, como se origino y desde cuando esta en funcionamiento-->
-    <span class="footer__sponsor">
-      <h3 class="sp__grid">Sponsors:</h3>
-      <img class="img__sp1" src="Logo.Sponsor1" alt="Logo de Sponsor" />
-      <img class="img__sp2" src="Logo.Sponsor2" alt="Logo de Sponsor" />
-      <img class="img__sp3"src="Logo.Sponsor3" alt="Logo de Sponsor" />
-      <img class="img__sp4"src="Logo.Sponsor4" alt="Logo de Sponsor" />
-    </span>
-    <span class="footer__contacto">
-      <form action="/">
-        <fieldset>
-          <Legend>Contacto:</Legend>
-          <br>
-          <label for="Nombre">Nombre:</label>
-          <input type="text" name="Nombre" id="Nombre">
-          <br>
-          <br>
-          <label for="Apellido">Apellido:</label>
-          <input type="text" name="Apellido" id="Apellido">
-          <br>
-          <br>
-          <label for="Mail">Mail:</label>
-          <input type="mail" name="Mail" id="Mail" placeholder="nombre@ejemplo.com">
-          <br>
-          <br>
-          <label for="Dudas">Tipo de Duda:</label>
-          <select name="Dudas" id="Dudas">
-            <option value="Trabajo">Trabajo</option>
-            <option value="Sponsors">Sponsors</option>
-            <option value="Otro">Otro</option>
-          </select>
-          <br>
-          <br>
-          <fieldset>
-            <legend>Cuentenos sobre sus intereses</legend>
-            <ul>
-              <li>
-                <input type="checkbox" name="CS GO" id="Intereses">
-                <label for="Intereses">CS GO</label>
-              </li> 
-              <li>
-                <input type="checkbox" name="TFT" id="Intereses">
-                <label for="Intereses">TFT</label>
-              </li>
-              <li>
-                <input type="checkbox" name="Valorant" id="Intereses">
-                <label for="Intereses">Valorant</label>
-              </li>
-              <li>
-                <input type="checkbox" name="League of legends" id="Intereses">
-                <label for="Intereses">League of legends</label>
-              </li>
-              <li>
-                <label for="Intereses">Otro:</label>
-                <input id="Intereses" name="Intereses" type="text" />
-              </li>
-            </ul>
-          </fieldset>
-          <br>
-          <button type="reset">Cambiar los datos introducidos</button>
-          <br>
-          <br>
-          <button type="submit">Enviar</button>
-        </fieldset>
-      </form>
-    </aside>
-  </span>
-</div>
-    <h4><b>Derechos de Proyecto</b></h4>
-    <!--Texto de derechos de proyectos-->
-  </footer>
-  <script src="js/wow.min.js"></script>
-<script>
-   new WOW().init();
-</script>
-</body>
+      </section>
+      <footer>
+          <div class="container">
+            <div class="row align-items-start">
+              <div class="col">
+                <div class="foto__center">
+                  <img src="/Imagenes/BJLogo (1).png" alt="foto footer Logo" class="foto__logo">
+                </div>
+                <h2 class="letra">Nosotros:</h2>
+                <h3 class="letra">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste in rem delectus provident vitae quaerat quisquam fuga temporibus fugiat accusamus laudantium esse, a id nisi molestiae nesciunt cupiditate! Sequi, similique!</h3>
+              </div>
+              <div class="col gap__footer">
+                <h3 class="redes__footer">Nuestras Redes:</h3>
+                <li class="li__footer" style="color: #8458b3;"><img src="https://picsum.photos/32/24" alt="Logo ig">
+                <h6>Seguinos en instagram</h6></li>
+                <li class="li__footer" style="color: #8458b3;"><img src="https://picsum.photos/32/24" alt="Logo twitter"><h6>Seguinos en Twitter</h6></li>
+                <li class="li__footer" style="color: #8458b3;"><img src="https://picsum.photos/32/24" alt="Logo twitch"><h6>Seguinos en Twitch</h6></li>
+                <li class="li__footer" style="color: #8458b3;"><img src="https://picsum.photos/32/24" alt="Logo Mail"><h6>No dudes en contactarte</h6></li>
+                </div>
+              <div class="col mt-3">
+                <h3 for="titulo" style="color: #8458b3;" class="titulo__forms">Contactate</h3>
+                <form>
+                  <div class="row mb-3">
+                    <label style="color: #8458b3;" for="inputEmail3" class="col-sm-2 col-form-label">Apellido y Nombre</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="inputEmail3">
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label style="color: #8458b3;" for="inputPassword3" class="col-sm-2 col-form-label">Mail </label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="inputPassword3">
+                    </div>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label style="color: #8458b3;" class="form-check-label" for="flexCheckDefault">
+                      Valorant
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label style="color: #8458b3;" class="form-check-label" for="flexCheckChecked">
+                      CS-GO
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label style="color: #8458b3;" class="form-check-label" for="flexCheckChecked">
+                      LOL
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="f lexCheckChecked" checked>
+                    <label style="color: #8458b3;" class="form-check-label" for="flexCheckChecked">
+                      TFT
+                    </label>
+                  </div>
+                  </fieldset>
+                  <div class="row mb-3">
+                    <div class="col-sm-10 offset-sm-2">
+                    </div>
+                  </div>
+                  <button type="reset" class="btn btn-primary">Cambiar los datos introducidos</button>
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+              </div>
+        </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  </body>
 </html>

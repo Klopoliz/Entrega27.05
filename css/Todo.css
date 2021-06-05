@@ -16,9 +16,15 @@ h4 {
   text-decoration: solid;
 }
 /*header */
-header{
+header {
   background: #202430;
-  color:white ;
+  color: white;
+}
+.main {
+  background-color: #212529;
+}
+.main hr {
+  margin: 0ch;
 }
 .header__div__inicio {
   padding: 11rem 11rem;
@@ -36,14 +42,14 @@ header{
   text-decoration: none;
   padding: 1rem 1.5rem;
   display: block;
-  background-color: #8458b3;
+  background-color: ;
   color: white;
   list-style: none;
   transition: all 2s;
 }
 .subequipo li a:hover {
   background-color: #b4a5a5;
-  transform: scale(0.9) translateX(-1px) translateY(1px); 
+  transform: scale(0.9) translateX(-1px) translateY(1px);
 }
 .subequipo li ul {
   display: none;
@@ -70,8 +76,7 @@ ul.horizontal div > li {
   background-color: rgb(71, 71, 71);
 }
 .header__logo {
-  width: 15rem;
-  height: 15rem;
+  height: 15vh;
   margin-top: 0rem;
   margin-left: 0rem;
 }
@@ -79,8 +84,7 @@ ul.horizontal div > li {
   grid-column-start: 6;
   grid-row-start: 3;
   display: flex;
-  width: 50rem;
-  height: 5rem;
+  width: 20rem;
   text-align: right;
   align-content: center;
 }
@@ -95,6 +99,7 @@ ul.horizontal div > li {
 .p__head {
   grid-column-start: 6;
   grid-row-start: 4;
+  width: 2rem;
 }
 .nav {
   display: flex;
@@ -133,7 +138,7 @@ section {
 .img {
   width: 50rem;
   height: 30rem;
-  padding: 5rem 20rem;
+  margin: 5rem 20rem;
 }
 .textnoticia {
   text-align: right;
@@ -188,6 +193,7 @@ ul.footer li {
 }
 .sp__grid {
   grid-column: 2/4;
+  color: white;
 }
 .img__sp1 {
   grid-column: 2;
@@ -408,4 +414,63 @@ ul.footer li {
 .img_equipos6 {
   grid-column: 4;
   grid-row: 3;
+}
+/* clases bootstrap */
+#menu a {
+  font-weight: 500;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+}
+.margin__logo {
+  margin-left: 5rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.dropdown-menu {
+  background-color: rgb(71, 71, 71);
+}
+.dropdown-menu li a:hover {
+  background-color: #212529;
+}
+.div__banner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.card-title {
+  color: black;
+}
+.card-text {
+  color: black;
+}
+.foto__logo {
+  height: 10vh;
+}
+.foto__center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.titulo__forms {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.li__footer {
+  display: flex;
+  list-style: none;
+  gap: 1vh;
+}
+.gap__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75vw;
+}
+.redes__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #8458b3;
+  margin-top: 1vw;
 }
