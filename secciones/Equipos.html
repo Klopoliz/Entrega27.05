@@ -1,310 +1,345 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>"Equipos"</title>
-  <link rel="stylesheet" href="/CSS/Todo.css" />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-</head>
-<body class="main">
-  <header>
-    <div class="grid__head">
-      <a href="/Index.html" class="prueba__a"
-        ><img class="header__logo animate__animated animate__backInDown" src="/Imagenes/BJLogo (1).png" alt="Logo del proyecto"
-      /></a>
-      <div class="header__mail">
-        <img class="header__mail__img"
-          src="/Imagenes/pngtree-email-icon-design-png-image_2413695.jpg"
-          alt="Icono de mail"
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+    crossorigin="anonymous"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="/CSS/Todo.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    <title>index nuevo</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <img
+          src="/Imagenes/BJLogo (1).png"
+          alt="Imagen Logo"
+          class="animate__animated animate__backInDown header__logo margin__logo"
         />
-        <div class="mail">Mail de contacto:<!-- El mail de contacto deberia encontrarse en la esquina superior derecha --></div>
       </div>
-        <div class="p__head"><p>blackjaga.esports@gmail.com</p></div>
+<!--    Hacer que se vean como los botones del nav original -->
+      <div>
+        <nav class="navbar navbar-expand-md navbar-light bg-light pt-0 pb-0" id="menu">
+          <div style="background-color: rgb(71, 71, 71);" class="container-fluid p-2">
+            <a class="navbar-brand" href="/Index.html">Home</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="/Secciones/Nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/Secciones/Tienda.html">Tienda</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Equipos
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="/Secciones/Equipos.html">Equipos</a></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li><a class="dropdown-item" href="/Secciones/TFT.html">TFT</a></li>
+                    <li><a class="dropdown-item" href="/Secciones/LOL.html">LOL</a></li>
+                    <li><a class="dropdown-item" href="/Secciones/CSGO.html">CS-GO</a></li>
+                    <li><a class="dropdown-item" href="/Secciones/Valorant.html">Valorant</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button style="background-color: #8458b3; color: white;" class="btn " type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
       </div>
-      <!-- Esto deberia encontrase abajo -->
-    </ul>
-    <br />
-    <hr />
-    <div class="header__nav__div">
-    <nav>
-      <ul class="horizontal subequipo">
-        <div>
-        <li><a href="/Index.html" class="nav">Home</a></li>
-        <li><a href="/Secciones/Equipos.html" class="nav">Equipos</a>
-          <ul class="hoover">
-            <li class="sub"><a href="/Secciones/CSGO.html">CS GO</a></li>
-            <li class="sub"><a href="/Secciones/Valorant.html">Valorant</a></li>
-            <li class="sub"><a href="/Secciones/LOL.html">League of Legends</a></li>
-            <li class="sub"><a href="/Secciones/TFT.html">TFT</a></li>
-          </ul>
-        </li>
-        <li><a href="/Secciones/Nosotros.html" class="nav">Nosotros</a></li>
-        <li><a href="/Secciones/Tienda.html" class="nav">Tienda</a></li>
+    </header>
+    <main>
+      <div class="container-fluid">
+        <div class="row align-items-start">
+          <div class="col letra titulo">
+            <h2 class="letra titulo mb-5 mt-5">Nuestros Equipos</h2>
+          </div>
         </div>
-        <div class="header__redes">
-        <a href="https://www.instagram.com/blackjaga_/" target="_blank" class="header__redes__nav"
-          ><img src="/Imagenes/insta.jpg" alt="Logo instagram" width="25" height="25"
-        /></a>
-        <a href="https://twitter.com/BlackJaga_" class="header__redes__nav" target="_blank"
-          ><img src="/Imagenes/twitter.jpg" alt="Logo twitter" width="25" height="25"
-        /></a>
-        <a href="https://www.twitch.tv/blackjaga_" class="header__redes__nav" target="_blank"
-          ><img src="/Imagenes/twitch.png" alt="Logo twitch" width="25" height="25"
-        ></a>
-      </div>
+        <div class="row align-items-start mb-5">
+          <div class="col-3">
+            <img src="https://picsum.photos/420/240" alt="Logo twitter" class="img-fluid ms-4">
+          </div>
+          <div class="col">
+            <table class="table table-dark table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Handle</th>
+                  <th scope="col">Handle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td colspan="2">Larry the Bird</td>
+                  <td>@twitter</td>
+                  <td>@fat</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row align-items-start mb-5">
+          <div class="col-3">
+            <img src="https://picsum.photos/420/240" alt="Logo twitter" class="img-fluid ms-4">
+          </div>
+          <div class="col">
+            <table class="table table-dark table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Handle</th>
+                  <th scope="col">Handle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td colspan="2">Larry the Bird</td>
+                  <td>@twitter</td>
+                  <td>@fat</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row align-items-start mb-5">
+          <div class="col-3">
+            <img src="https://picsum.photos/420/240" alt="Logo twitter" class="img-fluid ms-4">
+          </div>
+          <div class="col">
+            <table class="table table-dark table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Handle</th>
+                  <th scope="col">Handle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td colspan="2">Larry the Bird</td>
+                  <td>@twitter</td>
+                  <td>@mdo</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row align-items-start pb-5">
+          <div class="col-3">
+            <img src="https://picsum.photos/420/240" alt="Logo twitter" class="img-fluid ms-4">
+          </div>
+          <div class="col">
+            <table class="table table-dark table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Handle</th>
+                  <th scope="col">Handle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td colspan="2">Larry the Bird</td>
+                  <td>@twitter</td>
+                  <td>@mdo</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+    </main>
+    <footer>
+      <div class="container pt-5 pb-5">
+        <div class="row align-items-start">
+          <div class="col">
+            <div class="foto__center">
+              <img src="/Imagenes/BJLogo (1).png" alt="foto footer Logo" class="foto__logo">
+            </div>
+            <h2 class="letra">Nosotros:</h2>
+            <h3 class="letra">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste in rem delectus provident vitae quaerat quisquam fuga temporibus fugiat accusamus laudantium esse, a id nisi molestiae nesciunt cupiditate! Sequi, similique!</h3>
+          </div>
+          <div class="col gap__footer">
+            <h3 class="redes__footer">Nuestras Redes:</h3>
+            <a href="https://www.instagram.com/blackjaga_/">
+              <li class="li__footer" style="color: #8458b3;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+              </svg>
+              <h6>Seguinos en instagram</h6></li>
+            </a>
+            <a href="https://twitter.com/BlackJaga_">
+              <li class="li__footer" style="color: #8458b3;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+              </svg><h6>Seguinos en Twitter</h6></li>
+            </a>
+            <a href="https://www.twitch.tv/blackjaga_">
+              <li class="li__footer" style="color: #8458b3;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitch" viewBox="0 0 16 16">
+                <path d="M3.857 0 1 2.857v10.286h3.429V16l2.857-2.857H9.57L14.714 8V0H3.857zm9.714 7.429-2.285 2.285H9l-2 2v-2H4.429V1.143h9.142v6.286z"/>
+                <path d="M11.857 3.143h-1.143V6.57h1.143V3.143zm-3.143 0H7.571V6.57h1.143V3.143z"/>
+              </svg><h6>Seguinos en Twitch</h6></li>
+            </a>
+            <li class="li__footer" style="color: #8458b3;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+              <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+            </svg><h6>No dudes en contactarte</h6></li>
+            </div>
+          <div class="col">
+            <h3 for="titulo" style="color: #8458b3;" class="titulo__forms">Contactate</h3>
+            <form>
+              <div class="row mb-3">
+                <label style="color: #8458b3;" for="inputEmail3" class="col-sm-2 col-form-label">Apellido y Nombre</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputEmail3">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label style="color: #8458b3;" for="inputPassword3" class="col-sm-2 col-form-label">Mail </label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="inputPassword3">
+                </div>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label style="color: #8458b3;" class="form-check-label" for="flexCheckDefault">
+                  Valorant
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <label style="color: #8458b3;" class="form-check-label" for="flexCheckChecked">
+                  CS-GO
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                <label style="color: #8458b3;" class="form-check-label" for="flexCheckChecked">
+                  LOL
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="f lexCheckChecked">
+                <label style="color: #8458b3;" class="form-check-label" for="flexCheckChecked">
+                  TFT
+                </label>
+              </div>
+              </fieldset>
+              <div class="row mb-3">
+                <div class="col-sm-10 offset-sm-2">
+                </div>
+              </div>
+              <button type="reset" class="btn btn-primary">Cambiar los datos introducidos</button>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+          </div>
     </div>
-      </ul>
-    </nav>
-    <hr>
-    <br>
-  </header>
-  <section class="contenedor_equipos">
-    <h2 class="titulo_equipos">Nuestros Equipos</h2>
-    <img class="foto_1" src="." alt="Foto Roster de LOL">
-    <img class="foto_2" src="." alt="Foto Roster de TFT">
-    <img  class="foto_3"src="." alt="Foto Roster de CS GO">
-    <img  class="foto_4"src="." alt="Foto Roster de Valorant">
-    <fieldset class="tabla_1">
-      <table>
-        <tbody>
-          <legend>Historial LOL </legend>
-          <tr>
-            <th>Rivales</th>
-            <th>PG</th>
-            <th>PP</th>
-            <th>PJ</th>
-          </tr>
-          <tr>
-            <td>KRU</td>
-            <td>2</td>
-            <td>7</td>
-            <td>9</td>
-          </tr>
-          <tr>
-            <td>Isurus</td>
-            <td>3</td>
-            <td>2</td>
-            <td>5</td>
-          </tr>
-          <tr>
-            <td>Furious Gaming</td>
-            <td>9</td>
-            <td>1</td>
-            <td>10</td>
-          </tr>
-          <tr>
-            <td>Bhewal</td>
-            <td>16</td>
-            <td>2</td>
-            <td>18</td>
-          </tr>
-        </tbody>
-      </table>
-    </fieldset>
-    <fieldset class="tabla_2">
-      <table>
-        <tbody>
-          <legend>Historial Valorant </legend>
-          <tr>
-            <th>Rivales</th>
-            <th>PG</th>
-            <th>PP</th>
-            <th>PJ</th>
-          </tr>
-          <tr>
-            <td>KRU</td>
-            <td>2</td>
-            <td>7</td>
-            <td>9</td>
-          </tr>
-          <tr>
-            <td>Isurus</td>
-            <td>3</td>
-            <td>2</td>
-            <td>5</td>
-          </tr>
-          <tr>
-            <td>Furious Gaming</td>
-            <td>9</td>
-            <td>1</td>
-            <td>10</td>
-          </tr>
-          <tr>
-            <td>Bhewal</td>
-            <td>16</td>
-            <td>2</td>
-            <td>18</td>
-          </tr>
-        </tbody>
-      </table>
-    </fieldset>
-    <fieldset class="tabla_3">
-      <table>
-        <tbody>
-          <legend>Historial CS GO </legend>
-          <tr>
-            <th>Rivales</th>
-            <th>PG</th>
-            <th>PP</th>
-            <th>PJ</th>
-          </tr>
-          <td>KRU</td>
-          <td>2</td>
-          <td>7</td>
-          <td>9</td>
-        </tr>
-        <tr>
-          <td>Isurus</td>
-          <td>3</td>
-          <td>2</td>
-          <td>5</td>
-        </tr>
-        <tr>
-          <td>Furious Gaming</td>
-          <td>9</td>
-          <td>1</td>
-          <td>10</td>
-        </tr>
-        <tr>
-          <td>Bhewal</td>
-          <td>16</td>
-          <td>2</td>
-          <td>18</td>
-        </tbody>
-      </table>
-    </fieldset>
-    <fieldset class="tabla_4">
-      <table>
-        <tbody>
-          <legend>Historial TFT </legend>
-          <tr>
-            <th>Rivales</th>
-            <th>PG</th>
-            <th>PP</th>
-            <th>PJ</th>
-          </tr>
-          <tr>
-            <td>KRU</td>
-            <td>2</td>
-            <td>7</td>
-            <td>9</td>
-          </tr>
-          <tr>
-            <td>Isurus</td>
-            <td>3</td>
-            <td>2</td>
-            <td>5</td>
-          </tr>
-          <tr>
-            <td>Furious Gaming</td>
-            <td>9</td>
-            <td>1</td>
-            <td>10</td>
-          </tr>
-          <tr>
-            <td>Bhewal</td>
-            <td>16</td>
-            <td>2</td>
-            <td>18</td>
-          </tr>
-        </tbody>
-      </table>
-    </fieldset>
-  </section>
-  <footer>
-    <hr>
-    <br>
-    <div class="grid__foot">
-    <span class="footer__nos">
-      <a href="/Index.html"
-      ><img src="/Imagenes/BJLogo (1).png" alt="Logo del proyecto" class="footer__logo"
-      /></a>
-      <br>
-      <div class="nosfot">
-        <h2 class="letra">Nosotros:</h2>
-        <h3 class="letra">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste in rem delectus provident vitae quaerat quisquam fuga temporibus fugiat accusamus laudantium esse, a id nisi molestiae nesciunt cupiditate! Sequi, similique!</h3>
-      </div>
-    </span>
-    <!--Contar la historia del proyecto, como se origino y desde cuando esta en funcionamiento-->
-    <span class="footer__sponsor">
-      <h3 class="sp__grid">Sponsors:</h3>
-      <img class="img__sp1" src="Logo.Sponsor1" alt="Logo de Sponsor" />
-      <img class="img__sp2" src="Logo.Sponsor2" alt="Logo de Sponsor" />
-      <img class="img__sp3"src="Logo.Sponsor3" alt="Logo de Sponsor" />
-      <img class="img__sp4"src="Logo.Sponsor4" alt="Logo de Sponsor" />
-    </span>
-    <span class="footer__contacto">
-      <form action="/">
-        <fieldset>
-          <Legend>Contacto:</Legend>
-          <br>
-          <label for="Nombre">Nombre:</label>
-          <input type="text" name="Nombre" id="Nombre">
-          <br>
-          <br>
-          <label for="Apellido">Apellido:</label>
-          <input type="text" name="Apellido" id="Apellido">
-          <br>
-          <br>
-          <label for="Mail">Mail:</label>
-          <input type="mail" name="Mail" id="Mail" placeholder="nombre@ejemplo.com">
-          <br>
-          <br>
-          <label for="Dudas">Tipo de Duda:</label>
-          <select name="Dudas" id="Dudas">
-            <option value="Trabajo">Trabajo</option>
-            <option value="Sponsors">Sponsors</option>
-            <option value="Otro">Otro</option>
-          </select>
-          <br>
-          <br>
-          <fieldset>
-            <legend>Cuentenos sobre sus intereses</legend>
-            <ul>
-              <li>
-                <input type="checkbox" name="CS GO" id="Intereses">
-                <label for="Intereses">CS GO</label>
-              </li> 
-              <li>
-                <input type="checkbox" name="TFT" id="Intereses">
-                <label for="Intereses">TFT</label>
-              </li>
-              <li>
-                <input type="checkbox" name="Valorant" id="Intereses">
-                <label for="Intereses">Valorant</label>
-              </li>
-              <li>
-                <input type="checkbox" name="League of legends" id="Intereses">
-                <label for="Intereses">League of legends</label>
-              </li>
-              <li>
-                <label for="Intereses">Otro:</label>
-                <input id="Intereses" name="Intereses" type="text" />
-              </li>
-            </ul>
-          </fieldset>
-          <br>
-          <button type="reset">Cambiar los datos introducidos</button>
-          <br>
-          <br>
-          <button type="submit">Enviar</button>
-        </fieldset>
-      </form>
-    </aside>
-  </span>
-</div>
-    <h4><b>Derechos de Proyecto</b></h4>
-    <!--Texto de derechos de proyectos-->
   </footer>
-  <script src="js/wow.min.js"></script>
-  <script>
-     new WOW().init();
-  </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>
