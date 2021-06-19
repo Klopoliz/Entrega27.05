@@ -62,12 +62,7 @@ fieldset {
 .foto__logo {
   height: 10vh; }
 
-.foto__center {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.titulo__forms, .div__banner, .redes__footer {
+.titulo__forms, .div__banner, .foto__center, .redes__footer, .col .titulo {
   display: flex;
   align-items: center;
   flex-direction: column; }
@@ -110,13 +105,21 @@ fieldset {
 .col {
   margin-bottom: 5vh;
   margin-top: 5vh; }
-  .col .titulo {
-    flex-direction: column;
-    display: flex;
-    align-items: center; }
 
 .card {
   margin: 18px;
   background-color: #202430; }
   .card p, .card h5 {
     color: white; }
+
+@media (max-width: 1023px) {
+  .ocultar {
+    display: none; }
+  .logo__centro {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+  .margin__logo {
+    margin: 0px;
+    margin-top: 1rem;
+    margin-bottom: 1rem; } }

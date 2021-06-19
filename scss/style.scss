@@ -1,4 +1,4 @@
-$coloroscuro:#202430;
+$coloroscuro: #202430;
 @mixin mp {
   margin: 0;
   padding: 0;
@@ -10,7 +10,7 @@ $coloroscuro:#202430;
 html {
   font-size: 62.5%;
   body {
-    font-family: 'Mate SC', serif;
+    font-family: "Mate SC", serif;
     header {
       background: $coloroscuro;
       color: white;
@@ -24,7 +24,7 @@ html {
       color: white;
     }
     footer {
-      background:$coloroscuro;
+      background: $coloroscuro;
       color: white;
     }
   }
@@ -42,9 +42,9 @@ button:hover {
 fieldset {
   color: #8458b3;
   padding: 1vh;
-    li {
-      list-style-type: none;
-    }
+  li {
+    list-style-type: none;
+  }
 }
 /* clases bootstrap */
 #menu a {
@@ -63,21 +63,22 @@ fieldset {
 }
 .dropdown-menu {
   background-color: rgb(71, 71, 71);
-    li a:hover{
-      background-color: #212529;
-    }
+  li a:hover {
+    background-color: #212529;
+  }
 }
 .div__banner {
-@extend.titulo__forms
+  @extend.titulo__forms;
 }
-.card-title , .card-text {
+.card-title,
+.card-text {
   color: black;
 }
 .foto__logo {
   height: 10vh;
 }
 .foto__center {
-  @extend.titulo__forms
+  @extend.titulo__forms;
 }
 .titulo__forms {
   display: flex;
@@ -121,16 +122,32 @@ fieldset {
   padding: 2vh;
 }
 .col {
-margin-bottom: 5vh;
-margin-top: 5vh;
+  margin-bottom: 5vh;
+  margin-top: 5vh;
   .titulo {
-    @extend.titulo__forms
+    @extend.titulo__forms;
   }
 }
 .card {
   margin: 18px;
-  background-color:$coloroscuro;
-    p , h5 {
-        color: white;
-    }
-} 
+  background-color: $coloroscuro;
+  p,
+  h5 {
+    color: white;
+  }
+}
+@media (max-width: 1023px) {
+  .ocultar {
+    display: none;
+  }
+  .logo__centro {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .margin__logo {
+    margin: 0px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
