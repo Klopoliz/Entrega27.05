@@ -8,7 +8,7 @@ $coloroscuro: #202430;
   scroll-behavior: smooth;
 }
 html {
-  font-size: 62.5%;
+  font-size: 80%;
   body {
     font-family: "Mate SC", serif;
     header {
@@ -150,4 +150,50 @@ fieldset {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
+}
+.btn-flotante {
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  background-color: #4e4e4e3d;
+  padding: 0 10px;
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  transition: all 300ms ease 0ms;
+  box-shadow: 5px 5px 5px rgb (0 0 0 / 50%);
+  z-index: 99;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-flotante:hover {
+  color: #8458b3;
+}
+.linea__separadora {
+  margin: 10px auto;
+  width: 65%;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+.linea__separadora__cs{
+  @extend .linea__separadora;
+  width:40%;
+}
+.linea__separadora__valorant{
+  @extend .linea__separadora;
+  width:30%;
+}
+.linea__separadora__tienda{
+  @extend .linea__separadora;
+  width:45%;
+}
+.linea__separadora__tienda2{
+  @extend .linea__separadora;
+  width:35%;
+}
+.navbar-light .navbar-toggler {
+  background-color: #ffffff33;
 }
